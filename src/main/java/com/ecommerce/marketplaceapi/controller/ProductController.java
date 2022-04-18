@@ -1,6 +1,6 @@
-package com.ecommerce.apimarketplace.controller.product;
+package com.ecommerce.marketplaceapi.controller;
 
-import com.ecommerce.apimarketplace.controller.service.product.ProductService;
+import com.ecommerce.marketplaceapi.service.product.ProductService;
 import com.marketplace.marketplacecommon.product.dto.ProductDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

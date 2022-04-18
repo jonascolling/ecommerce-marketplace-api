@@ -1,6 +1,6 @@
-package com.ecommerce.apimarketplace.controller.service.product;
+package com.ecommerce.marketplaceapi.service.product;
 
-import com.ecommerce.apimarketplace.controller.proxy.ProductMsProxy;
+import com.ecommerce.marketplaceapi.proxy.ProductMsProxy;
 import com.marketplace.marketplacecommon.product.dto.ProductDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

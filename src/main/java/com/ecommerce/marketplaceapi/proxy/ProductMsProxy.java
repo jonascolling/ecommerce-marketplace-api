@@ -1,4 +1,4 @@
-package com.ecommerce.apimarketplace.controller.proxy;
+package com.ecommerce.marketplaceapi.proxy;
 
 import com.marketplace.marketplacecommon.product.dto.ProductDTO;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -9,6 +9,5 @@ public interface ProductMsProxy {
 
     @PostMapping("/product")
     void receiveProduct(ProductDTO productDTO);
-
 
 }

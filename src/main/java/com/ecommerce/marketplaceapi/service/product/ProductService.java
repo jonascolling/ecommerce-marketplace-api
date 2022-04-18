@@ -1,4 +1,4 @@
-package com.ecommerce.apimarketplace.controller.service.product;
+package com.ecommerce.marketplaceapi.service.product;
 
 import com.marketplace.marketplacecommon.product.dto.ProductDTO;
 
