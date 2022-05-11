@@ -1,6 +1,6 @@
 package com.ecommerce.marketplaceapi.proxy;
 
-import com.marketplace.marketplacecommon.product.dto.*;
+import com.marketplace.marketplacecommon.dto.product.*;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -9,18 +9,18 @@ import org.springframework.web.bind.annotation.PutMapping;
 public interface ProductMsProxy {
 
     @PostMapping
-    void receiveProduct(ProductDTO productDTO);
+    void receiveProduct(ProductDto productDTO);
 
     @PutMapping("/price")
-    void updatePrice(ProductPriceUpdateDTO productPriceUpdateDTO);
+    void updatePrice(ProductPriceUpdateDto productPriceUpdateDTO);
 
     @PutMapping("/stock")
-    void updateStock(ProductStockUpdateDTO productStockUpdateDTO);
+    void updateStock(ProductStockUpdateDto productStockUpdateDTO);
 
     @PutMapping("/delivery-data")
-    void updateDeliveryData(ProductDeliveryDataUpdateDTO productDeliveryDataUpdateDTO);
+    void updateDeliveryData(ProductDeliveryDataUpdateDto productDeliveryDataUpdateDTO);
 
     @PutMapping("/status")
-    void updateStatus(ProductStatusUpdateDTO productStatusUpdateDTO);
+    void updateStatus(ProductStatusUpdateDto productStatusUpdateDTO);
 
 }

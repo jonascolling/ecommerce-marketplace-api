@@ -1,7 +1,7 @@
 package com.ecommerce.marketplaceapi.service.product;
 
 import com.ecommerce.marketplaceapi.proxy.ProductMsProxy;
-import com.marketplace.marketplacecommon.product.dto.*;
+import com.marketplace.marketplacecommon.dto.product.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,27 +12,27 @@ public class ProductServiceImpl implements ProductService {
     private ProductMsProxy productMsProxy;
 
     @Override
-    public void receiveProduct(ProductDTO productDTO) {
+    public void receiveProduct(ProductDto productDTO) {
         productMsProxy.receiveProduct(productDTO);
     }
 
     @Override
-    public void updatePrice(ProductPriceUpdateDTO productPriceUpdateDTO) {
+    public void updatePrice(ProductPriceUpdateDto productPriceUpdateDTO) {
         productMsProxy.updatePrice(productPriceUpdateDTO);
     }
 
     @Override
-    public void updateStock(ProductStockUpdateDTO productStockUpdateDTO) {
+    public void updateStock(ProductStockUpdateDto productStockUpdateDTO) {
         productMsProxy.updateStock(productStockUpdateDTO);
     }
 
     @Override
-    public void updateDeliveryData(ProductDeliveryDataUpdateDTO productDeliveryDataUpdateDTO) {
+    public void updateDeliveryData(ProductDeliveryDataUpdateDto productDeliveryDataUpdateDTO) {
         productMsProxy.updateDeliveryData(productDeliveryDataUpdateDTO);
     }
 
     @Override
-    public void updateStatus(ProductStatusUpdateDTO productStatusUpdateDTO) {
+    public void updateStatus(ProductStatusUpdateDto productStatusUpdateDTO) {
         productMsProxy.updateStatus(productStatusUpdateDTO);
     }
 
