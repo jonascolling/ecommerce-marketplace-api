@@ -5,7 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 
-@FeignClient(name = "marketplace-in", url = "http://localhost:6364/product")
+@FeignClient(name = "product-marketplace-in", url = "http://localhost:6364/product")
 public interface ProductMsProxy {
 
     @PostMapping

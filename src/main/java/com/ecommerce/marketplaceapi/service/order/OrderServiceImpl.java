@@ -2,7 +2,7 @@ package com.ecommerce.marketplaceapi.service.order;
 
 import com.ecommerce.marketplaceapi.proxy.OrderMsProxy;
 import com.marketplace.marketplacecommon.dto.order.ConsignmentComissionDto;
-import com.marketplace.marketplacecommon.dto.order.ConsignmentDto;
+import com.marketplace.marketplacecommon.dto.order.ConsignmentStatusUpdateDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -13,8 +13,8 @@ public class OrderServiceImpl implements OrderService {
     private OrderMsProxy orderMsProxy;
 
     @Override
-    public void updateConsignmentStatus(ConsignmentDto consignmentDto) {
-        orderMsProxy.updateConsignmentStatus(consignmentDto);
+    public void updateConsignmentStatus(ConsignmentStatusUpdateDto consignmentStatusUpdateDto) {
+        orderMsProxy.updateConsignmentStatus(consignmentStatusUpdateDto);
     }
 
     @Override
